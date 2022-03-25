@@ -4,7 +4,7 @@ public class PasswortVali {
     public static void main(String[] args) {
 
         String password1 = "Asdg34#######";
-        String message = "";
+
         boolean validPasswordLenght = isValidPasswordLength(password1);
         boolean validPasswordUpperCase = isValidPasswordUpperCase(password1);
         boolean validPasswordLowerCase = isValidPasswordLowerCase(password1);
@@ -13,7 +13,6 @@ public class PasswortVali {
         boolean validPassword = validPasswordLenght&&validPasswordUpperCase&&validPasswordLowerCase&&
                 validPasswordNumbers&&validPasswordSpecialChars;
         System.out.println(password1 + "is valid password:" + validPassword);
-        System.out.println(message);
 
     }
     public static boolean isValidPasswordLength(String password) {
